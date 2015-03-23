@@ -1,0 +1,351 @@
+@-webkit-keyframes aparicion {
+  20% {
+    -webkit-transform: scale(0.9) rotate(-3deg);
+    transform: scale(0.9) rotate(-3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg);
+  }
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale(1.1) rotate(-3deg);
+    transform: scale(1.1) rotate(-3deg);
+  }
+}
+@keyframes aparicion {
+  20% {
+    -webkit-transform: scale(0.9) rotate(-3deg);
+    transform: scale(0.9) rotate(-3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale(1.1) rotate(3deg);
+    transform: scale(1.1) rotate(3deg);
+  }
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale(1.1) rotate(-3deg);
+    transform: scale(1.1) rotate(-3deg);
+  }
+}
+@font-face {
+  font-family: 'BebasNeue';
+  src: url('fonts/bebasneue-webfont.svg') format('svg');
+  src: url('fonts/bebasneue-webfont.eot') format('embedded-opentype'), url('fonts/bebasneue-webfont.woff') format('woff'), url('fonts/bebasneue-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Museo300';
+  src: url('fonts/museo300-regular-webfont.svg') format('svg');
+  src: url('fonts/museo300-regular-webfont.eot') format('embedded-opentype'), url('fonts/museo300-regular-webfont.woff') format('woff'), url('fonts/museo300-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+  margin: auto;
+  max-width: 720px;
+}
+::-moz-selection {
+  background: #ffee39;
+  color: #FFF;
+}
+::selection {
+  background: #ffee39;
+  color: #FFF;
+}
+::-webkit-selection {
+  background: #ffee39;
+  color: #FFF;
+}
+::-moz-selection {
+  background: #ffee39;
+  color: #FFF;
+}
+.header {
+  background: url("../images/slide/image-one.png") center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  font-size: 100px;
+  max-height: 700px;
+  position: relative;
+  width: 100%;
+}
+.header .slide {
+  background-color: rgba(7, 158, 199, 0.5);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.header .container {
+  left: 0px;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 560px;
+  z-index: 2;
+}
+.header .principal-msj h1.logo {
+  background: url("../images/logo.png") no-repeat left;
+  -webkit-background-size: contain;
+  background-size: contain;
+  height: 110px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.header .principal-msj h2 {
+  color: #ffffff;
+  font-family: 'BebasNeue';
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 80px;
+  text-shadow: 0px 0px 4px #999999;
+}
+.header .contact {
+  font-size: 16px;
+  margin-top: 15px;
+}
+.header .contact p {
+  color: #ffffff;
+  font-family: 'Museo300';
+  font-size: 20px;
+  margin-bottom: 5px;
+  text-shadow: 0px 0px 4px #666666;
+}
+.header .contact .form-group {
+  border-radius: 5px;
+  display: table;
+  overflow: hidden;
+  width: 80%;
+}
+.header .contact .form-group .cell {
+  display: table-cell;
+}
+.header .contact .form-group .button {
+  width: 130px;
+}
+.header .contact .form-group input,
+.header .contact .form-group button {
+  border: 0px;
+  font-family: 'Museo300';
+  font-size: 18px;
+  padding: 13px;
+  width: 100%;
+}
+.header .contact .form-group button {
+  background: #124eaa;
+  color: #ffffff;
+}
+.header .contact .form-group input {
+  font-style: italic;
+}
+.header .next {
+  background: #ffffff;
+  border-radius: 50%;
+  bottom: 0px;
+  height: 60px;
+  left: 0px;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  right: 0px;
+  width: 60px;
+}
+.header .next:before {
+  color: #124eaa;
+  content: '\f107';
+  font-family: 'FontAwesome';
+  font-size: 60px;
+  height: 60px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 60px;
+}
+.text-atrack {
+  background: url("../images/background-letras.png") no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 60px 50px;
+}
+.text-atrack p {
+  color: #079ec7;
+  font-family: 'BebasNeue';
+  font-size: 40px;
+  line-height: 35px;
+  text-align: center;
+}
+section.contact {
+  background: url("../images/background-contact.png") center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+section.contact .aux {
+  background-color: rgba(18, 78, 170, 0.8);
+}
+section.contact .container {
+  font-size: 0px;
+}
+section.contact .form,
+section.contact .info {
+  display: inline-block;
+  font-size: 14px;
+  padding: 30px 12px;
+  width: 50%;
+  vertical-align: top;
+}
+section.contact .form {
+  padding-right: 15px;
+}
+section.contact .form p {
+  color: #079ec7;
+  font-family: 'Museo300';
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+section.contact .form .error {
+  border-bottom: 2px solid #ff192c;
+}
+section.contact .info {
+  padding-left: 15px;
+}
+section.contact .info p {
+  border-bottom: 3px solid #079ec7;
+  color: #ffffff;
+  font-family: 'Museo300';
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+section.contact .info p span {
+  display: inline-block;
+  margin-right: 30px;
+  margin-top: 12px;
+}
+section.contact .info p a {
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  display: inline-block;
+  height: 55px;
+  vertical-align: top;
+  width: 55px;
+}
+section.contact .info p a.facebook {
+  background-image: url('../images/facebook.png');
+  margin-right: 8px;
+}
+section.contact .info p a.twitter {
+  background-image: url('../images/twitter.png');
+}
+section.contact .info address {
+  margin-top: 20px;
+}
+section.contact .info address h3 {
+  font-style: normal;
+  margin-top: 8px;
+}
+section.contact .info address p {
+  border: 0px;
+  color: #079ec7;
+  font-size: 16px;
+  font-style: normal;
+  padding: 0px;
+}
+section.contact h2,
+section.contact h3 {
+  color: #ffffff;
+  font-family: 'BebasNeue';
+  font-weight: normal;
+}
+section.contact h2 {
+  font-size: 72px;
+  margin-bottom: 25px;
+}
+section.contact h3 {
+  font-size: 36px;
+}
+section.contact input,
+section.contact textarea {
+  border: 0px;
+  border-radius: 5px;
+  color: #079ec7;
+  display: block;
+  font-family: 'Museo300';
+  font-size: 15px;
+  font-style: italic;
+  margin-bottom: 8px;
+  padding: 12px 10px;
+  width: 100%;
+}
+section.contact button {
+  background-color: #079ec7;
+  border: 0px;
+  border-bottom: 3px solid #124eaa;
+  color: #ffffff;
+  padding: 10px 18px;
+}
+footer p {
+  color: #124eaa;
+  font-family: 'Museo300';
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 15px;
+  text-align: center;
+}
+.loading {
+  background: url('../images/loading.gif') no-repeat center;
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 100%;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 9999;
+}
+.notification {
+  -webkit-animation: 2s aparicion 1;
+  animation: 2s aparicion 1;
+  font-family: 'Museo300';
+  font-size: 16px;
+  color: #ffffff;
+  padding: 8px 12px;
+  position: fixed;
+  right: 30px;
+  text-align: center;
+  top: 100px;
+  width: 250px;
+  z-index: 9999;
+}
+.notification p {
+  margin: 0px;
+}
+.notification.success {
+  background-color: rgba(7, 158, 199, 0.9);
+  border: 1px dashed #124eaa;
+}
+.notification.error {
+  background-color: rgba(18, 78, 170, 0.9);
+  border: 1px dashed #ff192c;
+}
