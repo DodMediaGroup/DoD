@@ -47,7 +47,7 @@ body {
 .container .info {
   max-width: 460px;
   position: absolute;
-  right: 12px;
+  right: 112px;
   top: 80px;
   width: 100%;
 }
@@ -127,7 +127,7 @@ body {
 }
 .container .info .address address:last-child {
   border-left: 1px solid #4d4d4d;
-  padding-left: 25px;
+  padding-left: 40px;
 }
 .div-loading {
   background: url(../images/loading.gif) center center no-repeat;
@@ -154,13 +154,20 @@ body {
   right: 0px;
   text-align: center;
   top: -2px;
-  transform: translateY(-99.99999999%);
+  transform: translateY(-100%);
   transition: all .2s;
   width: 300px;
   z-index: 99;
 }
 .div-message.active {
   transform: translateY(0%);
+}
+@media (max-width: 700px) {
+  .container .info {
+    left: 0px;
+    margin: auto;
+    right: 0px;
+  }
 }
 @media (max-width: 500px) {
   .container .info {
